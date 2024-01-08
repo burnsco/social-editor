@@ -37,7 +37,7 @@ button {
   color: rgba(255, 255, 255, 0.7);
   padding: 0 13px;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 .dd-toggle:hover {
