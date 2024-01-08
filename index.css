@@ -1,8 +1,14 @@
 /* RESET */
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 button {
@@ -29,6 +35,16 @@ button {
   0% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
   }
 
   100% {
@@ -136,12 +152,7 @@ button {
   transition: all 0.4s;
 }
 
-.menu__button:hover {
-  background-color: #2b363b;
-  color: #fff;
-  cursor: pointer;
-}
-
+.menu__button:hover,
 .menu__button:focus {
   background-color: #2b363b;
   color: #fff;
@@ -212,7 +223,7 @@ button {
 .panel__images {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
   padding: 25px 0;
 }
 
@@ -221,15 +232,96 @@ button {
   height: 140px;
   object-fit: cover;
   border-radius: 7px;
+  transition: all 0.2s;
+  animation: fadein 1s;
+}
+
+.panel__img:nth-child(2) {
+  animation: fadein 1s 0.1s backwards;
+}
+
+.panel__img:nth-child(3) {
+  animation: fadein 1s 0.2s backwards;
+}
+
+.panel__img:nth-child(4) {
+  animation: fadein 1s 0.3s backwards;
+}
+
+.panel__img:nth-child(5) {
+  animation: fadein 1s 0.4s backwards;
+}
+
+.panel__img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .panel__btn {
+  background-color: #333e44;
+  cursor: pointer;
+  width: 140px;
+  height: 140px;
+  border-radius: 7px;
+}
+
+.panel__btn:hover,
+.panel__btn:focus {
+  background-color: #404c52;
+  transition: all 0.2s;
 }
 
 .panel__upload-icon {
+  font-size: 25px;
+  color: #21292d;
 }
 
 .main {
   background-color: #edf1f3;
   flex: 1;
+}
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #d6dde1;
+  padding: 0 30px;
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.breadcrumbs__link {
+  color: #a6adb1;
+  text-decoration: none;
+}
+
+.breadcrumbs__icon {
+  color: #a6adb1;
+  margin: 0 13px;
+}
+
+.breadcrumbs__name {
+  color: #2e3335;
+  font-weight: 500;
+}
+
+.button {
+  background-color: #375bb6;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+.button:hover {
+  background-color: #26438d;
 }
