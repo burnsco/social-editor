@@ -1,0 +1,17 @@
+body {
+  background-color: whitesmoke
+  color: white;
+}
+
+.main-container {
+  border: 2px dashed blue;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  border: 1px dotted red;
+}

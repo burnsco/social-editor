@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.ha {
+  color: "red";
+}

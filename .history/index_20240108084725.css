@@ -1,0 +1,48 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: initial;
+  background-color: initial;
+  color: inherit;
+  font: inherit;
+}
+
+/* BASE */
+.app {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  height: 100svh;
+  width: 100vw;
+}
+
+/* STYLES */
+.header {
+  height: 55px;
+  background-image: linear-gradient(to right, #18a0be, #622db9);
+  display: flex;
+}
+
+.logo {
+}
+
+.dd-toggle {
+}
+
+.dd-toggle__icon {
+}
+
+.dd-toggle__img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.dd-toggle__span {
+}

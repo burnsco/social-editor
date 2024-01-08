@@ -1,0 +1,35 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: initial;
+  background-color: initial;
+}
+
+/* BASE */
+.app {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+/* STYLES */
+.header {
+  background-image: linear-gradient(to right, #18a0be, #622db9);
+}
+
+.logo {
+}
+
+.dd-toggle {
+}
+
+.dd-toggle__icon {
+}
+
+.dd-toggle__img {
+}
+
+.dd-toggle__span {
+}
