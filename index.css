@@ -46,6 +46,8 @@ button {
 }
 
 .app_container {
+  height: calc(100vh - 55px);
+  display: flex;
 }
 
 .header {
@@ -87,9 +89,6 @@ button {
   align-items: center;
 }
 
-.dd-toggle__icon {
-}
-
 .dd-toggle__img {
   height: 30px;
   width: 30px;
@@ -103,15 +102,17 @@ button {
   text-align: center;
 }
 
-.app_container {
-}
-
 .sidebar {
+  background-color: #10171a;
+  width: 75px;
 }
 
 .panel {
+  background-color: #2b363c;
+  width: 350px;
 }
 
 .main {
   background-color: #edf1f3;
+  flex: 1;
 }
