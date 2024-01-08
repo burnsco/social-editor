@@ -24,6 +24,17 @@ button {
   }
 }
 
+@keyframes fade-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -38,7 +49,7 @@ button {
 
 /* BASE */
 .app {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #fff;
   height: 100svh;
@@ -105,6 +116,70 @@ button {
 .sidebar {
   background-color: #10171a;
   width: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+}
+
+.menu__button {
+  animation-duration: 0.7s;
+  animation-name: fade-in-from-left;
+  padding: 20px 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.menu__button:hover {
+  background-color: #2b363b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu__button:focus {
+  background-color: #2b363b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu__button--active {
+  background-color: #2b363b;
+  color: #fff;
+  position: relative;
+}
+
+.menu__button--active::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background-color: #375bb6;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu__icon {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.menu__text {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.footer {
+  padding: 2px;
+  margin-top: auto;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 12px;
 }
 
 .panel {
