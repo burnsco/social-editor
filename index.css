@@ -9,6 +9,7 @@ button {
   background-color: initial;
   color: inherit;
   font: inherit;
+  outline: none;
 }
 
 /* BASE */
@@ -39,6 +40,10 @@ button {
   cursor: pointer;
   transition: all 0.4s;
 }
+.dd-toggle:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.07);
+}
 
 .dd-toggle:hover {
   color: #fff;
@@ -47,6 +52,11 @@ button {
 
 .dd-toggle:nth-of-type(4) {
   margin-left: auto;
+}
+
+.dd-toggle:last-child {
+  display: flex;
+  align-items: center;
 }
 
 .dd-toggle__icon {
@@ -63,4 +73,10 @@ button {
 .dd-toggle__span {
   height: 100%;
   text-align: center;
+}
+
+.main-container {
+  display: flex;
+  color: #bd5819;
+  background-color: antiquewhite;
 }
